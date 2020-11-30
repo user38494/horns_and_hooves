@@ -1,120 +1,104 @@
+ 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<link rel="stylesheet" href="style.css">
-<meta charset="utf-8">
-<link rel="shortcut icon" href="img/icon.png" type="image/png">
-<title>Рога и копыта</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style/main.css">
+
+<title>Компания "Рога и копыта"</title>
+<style>
+    a {
+    color: #14ffe0; /* Цвет обычной ссылки */
+    padding: 2px; /* Поля вокруг текста */
+    }
+    a:visited {
+    color: #19f0ff; /* Цвет посещенной ссылки */
+    }
+    a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */
+    background: #0edf99; /* Цвет фона */
+    }
+    </style>
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<table width="80%" cellspacing = "10" padding="5">
-<tr>
-<td colspan="2" height="300">
+<div class="wrapper">
+<header>
 <h1>Компания "Рога и копыта"</h1>
-<h2>Мы работаем для Вас</h2>
-</td>
-</tr>
-<tr>
-<td colspan="2" height="50" bgcolor="a6caf0">
-<a href="index.html">Главная</a>
-<a href="about.html">О компании</a>
-<a href="employee.html">Наши сотрудники</a>
-<a href="education.html">Обучение</a>
-<a href="gallery.html">Галлерея</a>
-Заказы
-</td>
-</tr>
-<tr>
-<td bgcolor="#bbbbbb" width="100">
-<p><a href="index.html">Главная</a></p>
-<p><a href="about.html">О компании</a></p>
-<p><a href="employee.html">Наши сотрудники</a></p>
-<p><a href="education.html">Обучение</a></p>
-<p><a href="gallery.html">Галлерея</a></p>
-<p>Заказы</p>
-</td>
-<td>
-<input type="button" onclick="history.back();" value="Назад"/>
-<hr></hr>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Заказы</title>
-<link rel="shortcut icon" href="horns_and_hooves.ico" type="image/x-icon">
-</head>
-<body>
+<h2>Мы работаем для вас</h2>
+</header>
+<!— /.header —>
+<div class="menu">
+<ul>
+<li><a href="/index.html" class="menu-link">Главная</a></li>
+<li><a href="/about.html" class="menu-link">О компании</a></li>
+<li><a href="/employee.html" class="menu-link">Наши сотрудники</a></li>
+<li><a href="/order.html" class="menu-link">Заказать</a></li>
+<li><a href="/gallery.html" class="menu-link">Галлерея</a></li>
+<li><a href="/education.html" class="menu-link">Обучение</a></li>
+<li><a href="/fonts.html" class="menu-link">Шрифты</a></li>
+<li><a href="https://мвд.рф/" target="_blank" class="menu-link">Мы чтим уголовный кодекс</a></li>
+</ul>
+</div>
+<!— /.menu —>
+<div class="content-col">
+<div class="vertical-menu">
+<ul>
+<li><a href="/index.html" class="menu-link">Главная</a></li>
+<li><a href="/about.html" class="menu-link">О компании</a></li>
+<li><a href="/employee.html" class="menu-link">Наши сотрудники</a></li>
+<li><a href="/order.html" class="menu-link">Заказать</a></li>
+<li><a href="/gallery.html" class="menu-link">Галлерея</a></li>
+<li><a href="/education.html" class="menu-link">Обучение</a></li>
+<li><a href="/fonts.html" class="menu-link">Шрифты</a></li>
+</ul>
+</div>
+<!— /.vertical-menu —>
+<div class="content">
+<h3>Заказать</h3>
+<form action="" method="POST">
 <label class="calculation">
 <label>Наличный расчёт<input type="radio" name="calculation"></label>
 <labe1>Безналичный расчёт<input type="radio" name="calculation"></labe1>
 </label>
-<p>
-<label>Фамилия</label>
-<input type="text" name="last_name">
-</p>
-<label>Имя</label>
-<input type="text" name="first_name">
-</p>
-<p>
-<label>Отчество</label>
-<input type="text" name="middle_name">
-</p>
-<p>
-<label>Email</label>
-<input type="email" name="email">
-</p>
-<p>
-<label>Телефон</label>
-<input type="tel" name="phone">
-</p>
-<p>
-<label>Пароль</label>
-<input type="password" name="password">
-</p>
-<p>
-<label>Подтвердите пароль</label>
-<input type="password" name="password_confirm">
-</p>
-<p>
-<label>Федеральный округ</label>
-<select name="district">
-<option>Федеральный</option>
-<option>Южный</option>
-<option>Северо-Западный</option>
-<option>Дальневосточный</option>
-<option>Сибирский</option>
-<option>Уральский</option>
-<option>Приволжский</option>
-<option>Северо-Кавказский</option>
-<option>Крымский</option>
+
+<p><label>Фамилия <input type="text" name="surname" placeholder="Петров"></label></p>
+<p><label>Имя <input type="text" name="name" placeholder="Пётр"></label></p>
+<p><label>Отчество <input type="text" name="middleName" placeholder="Петрович"></label></p>
+<p><label>Email <input type="email" name="email" placeholder="petrovich@mail.ru"></label></p>
+<p><label>Телефон <input type="text" name="phone" placeholder="+7 (999)000-00-00"></label></p>
+<p><label>Пароль <input type="password" name="password" placeholder="********"></label></p>
+<p><label>Подтвердите пароль <input type="password" name="confrimPassword" placeholder="********"></label></p>
+<p><label>Федеральный округ
+<select name="federalDistrict">
+<option value="1" selected>Центральный</option>
+<option value="2">Северо-западный</option>
+<option value="3">Южный</option>
+<option value="4">Северо-Кавказкий</option>
+<option value="5">Приволжский</option>
+<option value="6">Уральский</option>
 </select>
-</p>
-<label>Заказываю</label>
-<p>
-<label>
-<input type="checkbox"> рога в количестве
+</label></p>
+<p><label class="labelOrder"></p>
+Заказываю
+<p><label><input type="checkbox" name="horns">рога в количестве <input type="number" name="hornsCount" value="1"> штук</label></p>
+<p><label><input type="checkbox" name="hooves">копыта в количестве <input type="number" name="hoovesCount" value="1"> штук</label></p>
 </label>
-<input type="text">
-<label>штук</label>
-<p>
-<label>
-<input type="checkbox"> копыта в количестве
-</label>
-<input type="text">
-<label>штук</label>
-</p>
-<p>
-<label>Пожелания</label>
-<br>
-<textarea></textarea>
-</p>
-<p>
+<label>Пожелания<br><textarea name="wishes" cols="30" rows="4"></textarea></label>
 <input type="submit" value="Подтвердить заказ">
-</p>
+</form>
 </td>
+<!— /.content —>
 </tr>
-<tr>
-<td colspan="2" height="100" bgcolor="a6caf0">
-<p> &copy <i>Бендер и компания</i> </p>
-</td>
-</tr>
-</table>
-</body>
-</html>
+<!— /.content-col —>
+<tr class="footer">
+    <footer>
+        <a href="#" class="btn-up" title="Наверх">^<br>|</a>
+        <i>&copy; Бендер и компания</i>
+        </footer>
+        </div>
+        </body>
+        </html>
