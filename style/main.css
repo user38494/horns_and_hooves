@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    }
+    body{background-color: #ffffff;}
+    h1{
+    color: rgb(252, 126, 23);
+    font-size: 25px;
+    font-weight: medium;
+    }
+    h2{
+    color: rgb(255, 155, 4);
+    font-size: 20px;
+    font-weight: 500;
+    }
+    h3{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    }
+    p{
+    color: #0f0f0f;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 14px;
+    }
+    img{border: 3px dotted rgb(255, 0, 0);}
+    
+    .menu ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    .menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    }
+    
+    table td.content table td:nth-child(4) img{
+    width: 160px;
+    box-sizing: border-box;
+    object-fit: contain;
+    background-color: rgb(255, 255, 255);
+    }
+    
+    .about ul>li:nth-child(1){font-variant: small-caps;}
+    .about ol>li{font-variant: normal;}
+    .about ol>li:nth-child(1){font-weight: 100;}
+    .about ol>li:nth-child(2){font-weight: 300;}
+    .about ol>li:nth-child(3){font-size: 15px;}
+    .about ol>li:nth-child(4){font-size: 20px;}
+    .about ol>li:nth-child(5){color: #daa42f}
+    .about ul>li:nth-child(2){color: rgb(252, 252, 252)}
+    .about ul>li:nth-child(3){font: italic normal 700 15px "Roboto"}
+    
+    .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    }
+    header{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    a{
+    font-size: 14px;
+    font-family:
+    'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',sss
+    Geneva, Verdana, sans-serif;
+    color: rgb(247, 107, 14);
+    text-decoration: underline;
+    }
+    a:hover{
+    color: rgb(226, 205, 87);
+    text-decoration: none;
+    }
+    .menu{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .menu-link, .menu-link:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color .3s ease-out;
+    }
+    .vertical-menu a.menu-link{
+    color: rgb(0, 0, 0)
+    }
+    .vertical-menu a.menu-link:hover,
+    .menu-link:hover{
+    color: rgb(255, 255, 255);
+    }
+    .vertical-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 177, 65)
+    width: 120px;
+    }
+    .content-col{
+    display: flex;
+    }
+    .menu{
+    background-color: rgb(223, 156, 93);
+    }
+    footer{
+    height: 100px;
+    background-color: rgb(243, 130, 0);
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+    form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    }
+    label{
+    margin-bottom: 5px;
+    }
+    input{
+    margin-left: 5px;
+    }
+    .labelOrder{
+    display: flex;
+    flex-direction: column;
+    }
+    input[type=number]{
+    width: 32px;
+    }
+    .calculation{
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    }
+    input[type=checkbox]{
+    margin-right: 5px;
+    margin-left: 0;
+    }
+    input[type=submit]{
+    margin-left: 0;
+    }
+    input[type=password]:focus,
+    input[type=number]:focus,
+    input[type=email]:focus,
+    input[type=text]:focus,
+    select:focus
+    {
+    outline: 1px solid rgb(211, 66, 9);
+    outline-offset: -1px;
+    }
+    
+    
+    table {
+    background: #bd1b1b; /* Цвет фона таблицы */
+    border: 5px double #ffaf8a;
+    margin-top:50px;
+    }
+    
+    
+    table {
+    background: #ffffff; /* Цвет фона таблицы */
+    border: 5px double #ffda8a;
+    margin-top:50px;
+    font-size:1pt;
+    
+    }
+    th{
+    font-family: Calibri;
+    background: rgb(128, 9, 0); /* Цвет фона таблицы */
+    color: #fafafa; /* Цвет текста */
+    text-align: center; /* Выравнивание по centry */
+    font-style: italic;
+    font-size: 13pt;
+    font-weight: bold;
+    }
+    
+    td{
+    font-family: Calibri;
+    font-style: normal;
+    font-size: 12pt;
+    color:#ff3333;
+    padding: 10px; /* Поля вокруг текста */
+    background: #ffffff; /* Цвет фона ячеек */
+    border: 5px outset #ffda8a;
+    }
+    
+    .time td{
+    font-family: arial;
+    font-style: normal;
+    font-size: 12pt;
+    color:black;
+    font-weight: bold;
+    }
+    
+    td:hover{
+    visibility: hidden;
+    }
+    
+    th:hover{
+    visibility: hidden;
+    }
+    .education{
+    color: #002b1252;
+    font-family: 'Comic Sans', Times, serif;
+     
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    .content {
+    color: #00000052;
+    font-family: 'Verdana', Times, serif;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: bold;
+    }
