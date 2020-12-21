@@ -1,51 +1,39 @@
 table {
     background: #ffffff; /* Цвет фона таблицы */
-    border: 5px double #ffd08a;
+    border: #b2682c;
     }
     
-    th{
-    font-family: Calibri;
-    background: maroon; /* Цвет фона таблицы */
-    color: #ffffff; /* Цвет текста */
-    text-align: center; /* Выравнивание по centry */
-    font-style: italic;
-    font-size: 13pt;
-    font-weight: bold;	
-    }
     
-    td{
-    font-family: Calibri;
-    font-style: normal;
-    font-size: 12pt;
-    color:#ffb833;
-    padding: 10px; /* Поля вокруг текста */
-    background: #ffffff; /* Цвет фона ячеек */
-    border: 5px outset #fffd8a;
+    thead {
+        background: #ddec0a;
     }
-    
-    td{
-    font-family: arial;
-    font-style: normal;
-    font-size: 12pt;
-    color:black;
-    font-weight: bold;	
+
+    thead th {
+        color: #fdfdfd;
+        font-style: italic;
+        font-family: calibri;
+        padding: 0px 3px 0px 3px;
+        text-align: center;
     }
-    
-    td:hover{
-    visibility: hidden;
+
+    tbody td {
+        color: #744c18;
+        padding: 0px 0px 0px 8px;
     }
-    
-    th:hover{
-    visibility: hidden;
+
+    tfoot td{
+        font-family: calibri;
+        padding: 0px 8px 0px 5px;
+        text-align: left;
     }
-    (min-width:700px){
-    #gm{
-    border-radius:40px 15px;
-    max-width:900x;
-    text-align: center;
-    padding: 5px;
-    background: #8affbd;
-    opacity: 0.5;
-    padding:10px;
+
+    tfoot th{
+        font-family: calibri;
+        padding: 0px 3px 0px 5px;
+        text-align: right;
     }
+
+    .education td:hover, .education th:hover {
+        visibility: hidden;
     }
+    .content-col{
